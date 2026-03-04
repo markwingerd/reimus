@@ -310,8 +310,8 @@ header nav ul ul {
   padding: 0.5em;
   z-index: 1;
   border: var(--border);
-  min-width: 100%;
   box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+  white-space: nowrap; /* This gets the dropdown box to resize depending on the content */
 }
 
 header nav ul li:hover ul,
