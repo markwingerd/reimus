@@ -18,9 +18,10 @@
 
     <!-- CSS: -->
     <!-- You will have to change this to "../style.css" if this HTML file is in a subfolder, to "../../style.css" if this HTML file is in 2 subfolders, etc. -->
-    <link href="./style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     
 
+    <script src="layout.js"></script>
     <script>
       // Template generated with petrapixel's layout generator.
       // (Please do not remove this credit.)
@@ -30,109 +31,15 @@
   <body>
     <!-- The next line is a skip-to-content link for keyboard users. Do not remove it! -->
     <a href="#content" id="skip-to-content-link">Skip to content</a>
-
-    <div class="layout">
-  
-      <!-- =============================================== -->
-      <!-- HEADER -->
-      <!-- =============================================== -->
-
-      <header>
-
-        <div class="header-content">
-	        <div class="header-title">Reimus' Website</div>
-	        
-	        <!-- NAVIGATION -->
-	        <nav>
-	          <ul>
-	            <li><a href="/">Home</a></li>
-	            <!-- <li><a href="/anime.html">Anime</a></li>
-	            <li><a href="/games.html">Video Games</a></li>
-	            <li><a href="/projects.html">Programming Projects</a></li> -->
-	            <li>
-	                <strong>Anime</strong>
-	                <ul>
-	                  <li><a href="/anime/index.html">My Anime List</a></li>
-	                </ul>
-	            </li>
-	          </ul>
-	        </nav>
-        	
-        </div>
-      </header>
-
-	  
-	
-	  
-      <!-- =============================================== -->
-      <!-- RIGHT SIDEBAR -->
-      <!-- =============================================== -->
-
-      <!-- <aside class="right-sidebar">
-	  
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
-        </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
-          </blockquote>
-        </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <ul>
-            <li>List</li>
-            <li>List</li>
-            <li><a href="/">List</a></li>
-            <li>List</li>
-          </ul>
-        </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <marquee>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          </marquee>
-        </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <img class="full-width-image" src="https://picsum.photos/id/10/1000/400">
-        </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <div class="site-button">
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-        	<textarea><a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a></textarea>
-          </div>
-        </div>
-      </aside> -->
-      
-  
+    <div class="layout">	  
       <main id="content"> <!-- Do NOT remove the ID here -->
-
-        
-
         <!-- =============================================== -->
         <!-- MAIN CONTENT -->
         <!-- =============================================== -->
-
-
         <section>
 
           <h1>Welcome to my website</h1>
-          <p>This website is meant to archive some of my interests over the years. Hopefully you like some of this stuff too.</p>
+          <p>This website is meant to archive some of my interest of the years. Hopefully you like some of this stuff too.</p>
           <!-- <p>
             I will now show you how to use the most common HTML text elements:
             <b>This is bold text.</b> 
@@ -217,60 +124,36 @@
 	          </div>
           </div> -->
 
-          <h2>Instant Gallery</h2>
+          <h5>Instant Gallery</h5>
 
-          <p id="instant-1"><b>Sailor Moon</b>
-            <br />
-            This is the first anime I really got into. I had seen others like some Dragonball, Speedracer, and Gotchaman before hand but Sailor Moon was significantly different. It's one of the first 
-            shows I saw that had a major story arc and you could watch the characters grow over time. On top of that the artwork really stood out. Most of the artwork for American cartoons always
-            looked so bad.
-            <br />
-            <img class="full-width-image" alt="" src="./images/sailor-moon-artsy.jpg" />
+          <p id="instant-1">Sailor Moon
+          <br />
+          <img class="full-width-image" alt="" src="./images/sailor-moon-artsy.jpg" />
           </p>
 
-          <p id="instant-2"><b>Hunt: Showdown</b>
-            <br />
-            This is probably one of my most recent major interests but I have about 4.5k hours in this game over the past 6ish years. This game has a different feel than most other FPS because it 
-            takes place in the late 1800s and has a design that really fits that aesthetic. The gun play really benefits from this because it has older guns take a lot more time to shoot and reload
-            so the fights take a bit longer and each shot really feels like it matters. One extra thing I appreciate is that most of the DLC skins all fit with the aesthetic. Too many games do collabs
-            with other properties or just try too hard to make their characters look bad ass. In hunt most of the characters look like they've been living in that world.
-            <br />
-            <img class="full-width-image" alt="" src="./images/hunt-showdown-cover.jpg" />
+          <p id="instant-2">Hunt: Showdown
+          <br />
+          <img class="full-width-image" alt="" src="./images/hunt-showdown-cover.jpg" />
           </p>
 
-          <p id="instant-3"><b>Zero Player Game</b>
-            <br />
-            Okay, this one is weird. It's a game concept I always come back to. It may sound like a clicker game but it's far from it. In this genre, you create a character and it's AI takes over and
-            plays the game for you. Sometimes you have some small ability to change what it can or cannot do. My current attempt at making a zero player game has gone pretty well. I'm adding a whole new
-            level of difficulty to creating it because I always want it work a bit like a multiplayer game too. You create a character, it does it's own thing but it can interact with other peoples
-            characters. So far I pretty much have the backend for it running but it has been running for over a year now I think. The screenshot below shows only the backend portion of the game.
-            <br />
-            <img class="full-width-image" alt="" src="./images/life-in-parchment.png" />
+          <p id="instant-3">Zero Player Game
+          <br />
+          <img class="full-width-image" alt="" src="./images/life-in-parchment.png" />
           </p>
 
-          <p id="instant-4"><b>The Adventures of Pete and Pete</b>
-            <br />
-            This was such a great show from my childhood. It aired in 1992 and follows two brothers, both named Pete and follows a very exaggerated events of their lives. Over all the show really holds
-            up to the nostalgia. My wife who is watching this with me and for her it's the first time is also enjoying it. She noted that this is a great example of the unreliable narrator trope which
-            makes the show make a lot more sense. You are viewing the events through older Petes eyes or what he was told from little Pete.
-            <br />
-            <img class="full-width-image" alt="" src="./images/pete-and-pete.jpg" />
+          <p id="instant-4">The Adventures of Pete and Pete
+          <br />
+          <img class="full-width-image" alt="" src="./images/pete-and-pete.jpg" />
           </p>
 
-          <p id="instant-5"><b>Space Patrol Luluco</b>
-            <br />
-            Space Patrol Luluco is a very short anime with only 13 episodes that are around 7 minutes long. It's fast paced and very spastic but it goes hard into it's humor. It's well worth a watch and
-            its <a href="https://youtu.be/Oa0Jt1j_h6I?si=IrGyUdhu5JXZm7ah">ending song</a> is awesome.
-            <br />
-            <img class="full-width-image" alt="" src="./images/luluco.webp" />
+          <p id="instant-5">Space Patrol Luluco
+          <br />
+          <img class="full-width-image" alt="" src="./images/luluco.webp" />
           </p>
 
-          <p id="instant-6"><b>Civilization 7</b>
-            <br />
-            This game has been a nice escape from much of the other gaming I've been doing considering I want a bit more of a single player experience. There's a lot of depth to this game but it takes some
-            time to find it and even more to understand it. It's definitely been nice getting better at the game but I can't recommend anyone get this unless its on sale.
-            <br />
-            <img class="full-width-image" alt="" src="./images/civilization-7.jpg" />
+          <p id="instant-6">Civilization 7
+          <br />
+          <img class="full-width-image" alt="" src="./images/civilization-7.jpg" />
           </p>
 
 
@@ -296,11 +179,6 @@
       <!-- =============================================== -->
       <!-- FOOTER -->
       <!-- =============================================== -->
-
-      <footer>
-            <!-- <div>Footer Text. <a href="/">Link.</a> -->Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
-      </footer>
-  
     <!-- Closing .layout: -->
     </div>
 
