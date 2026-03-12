@@ -164,6 +164,6 @@ const headerEl = `
 // You don't need to use the <footer> element, but I recommend it.
 const footerEl = `
 	<footer>
-        <!-- <div>Footer Text. <a href="/">Link.</a> -->Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
+        <!-- <div>Footer Text. <a href="/">Link.</a> -->Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">&nbsppetrapixel's layout generator</a>.</div>
     </footer>
 `;
