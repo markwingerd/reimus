@@ -34,11 +34,11 @@ function initActiveLinks() {
 
   const pathname = window.location.pathname;
   [...document.querySelectorAll("a")].forEach((el) => {
-    const elHref = el.getAttribute("href").replace(".html", "").replace("/public", "");
+    const elHref = el.getAttribute("href").replace(".html", "").replace("./", "/");
 
     if (pathname == "/") {
       // homepage
-      if (elHref == "/" || elHref == "/index.html") el.classList.add("active");
+      if (elHref == "/" || elHref == "/index") el.classList.add("active");
     } else {
       // other pages
       if (window.location.href.includes(elHref)) el.classList.add("active");
@@ -79,85 +79,201 @@ const nesting = getNestingString();
 // You don't need to use the <header> element, but I recommend it.
 const headerEl = `
     <header>
-
-        <div class="header-content">
-	        <div class="header-title">Reimus' Website</div>
-	        
-	        <!-- NAVIGATION -->
-	        <nav>
-	          <ul>
-	            <li><a href="index.html">Home</a></li>
-	            <li><a href="anime.html">Anime</a></li>
-	            <!-- <li><a href="/games.html">Video Games</a></li>
-	            <li><a href="/projects.html">Programming Projects</a></li>
-	            <li><a href="/music.html">Music</a></li> -->
-	            <!-- <li>
-	                <strong>Anime</strong>
-	                <ul>
-	                  <li><a href="./anime/index.html">My Anime List</a></li>
-	                </ul>
-	            </li> -->
-	          </ul>
-	        </nav>
-        	
-        </div>
-      </header>
-
-	<!-- <aside>Sidebar...</aside> -->
-    <!-- =============================================== -->
-      <!-- RIGHT SIDEBAR -->
-      <!-- =============================================== -->
-
-      <!-- <aside class="right-sidebar">
-	  
+      <div class="header-content">
+        <p>Reimus</p>
         
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
-        </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
-          </blockquote>
-        </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
+        <!-- NAVIGATION
+        <nav>
           <ul>
-            <li>List</li>
-            <li>List</li>
-            <li><a href="/">List</a></li>
-            <li>List</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="anime.html">Anime</a></li>
+            <li><a href="/games.html">Video Games</a></li>
+            <li><a href="/projects.html">Programming Projects</a></li>
+            <li><a href="/music.html">Music</a></li>
+            <li>
+                <strong>Anime</strong>
+                <ul>
+                  <li><a href="./anime/index.html">My Anime List</a></li>
+                </ul>
+            </li> 
+          </ul>
+        </nav>-->
+      </div>
+    </header>
+
+    <!-- =============================================== -->
+    <!-- LEFT SIDEBAR -->
+    <!-- =============================================== -->
+
+    <aside class="left-sidebar">
+
+      <nav class="aside-nav">
+        <div class="aside-nav__heading" aria-hidden="true">Menu</div>
+          <ul aria-label="Menu">
+            <li>
+              <a href="./index.html">
+                <img width="9" src="assets/img/layout/heart.png" alt="" aria-hidden="true">home
+              </a>
+            </li>
+            <li>
+              <details data-id="Anime">
+                <summary>Anime Shrine</summary>
+                <ul>
+                  <li class="end-section">
+                    <a href="/myanimelist.html">My Anime List</a>
+                  </li>
+                  <li>
+                    <a href="/sailormoon.html">Sailor Moon</a>
+                  </li>
+                  <li>
+                    <a href="/cardcaptorsakura.html">Serial Experiments: Lain</a>
+                  </li>
+                  <li>
+                    <a href="/ouran.html">Ouran highschool host club</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details data-id="Games">
+                <summary>Video Games</summary>
+                <ul>
+                  <li class="end-section">
+                    <a href="/gameachievements.html">My achievements</a>
+                  </li>
+                  <li>
+                    <a href="/hunt.html">Hunt: Showdown</a>
+                  </li>
+                  <li>
+                    <a href="/vrising.html">V Rising</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details data-id="Music">
+                <summary>Music</summary>
+                <ul>
+                  <li>
+                    <a href="/mytopmusic.html">My favorite music</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
           </ul>
         </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <marquee>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          </marquee>
+      </nav>
+
+    <!-- 
+      <div class="sidebar-section">
+        <div class="sidebar-title">Section Title</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
+      </div>
+      
+      <div class="sidebar-section">
+        <div class="sidebar-title">Section Title</div>
+        <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
+        </blockquote>
+      </div>
+      
+      <div class="sidebar-section">
+        <div class="sidebar-title">Section Title</div>
+        <ul>
+          <li>List</li>
+          <li>List</li>
+          <li><a href="/">List</a></li>
+          <li>List</li>
+        </ul>
+      </div>
+      
+      <div class="sidebar-section">
+        <div class="sidebar-title">Section Title</div>
+        <marquee>
+          <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+          <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+          <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+          <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+        </marquee>
+      </div>
+      
+      <div class="sidebar-section">
+        <div class="sidebar-title">Section Title</div>
+        <img class="full-width-image" src="https://picsum.photos/id/40/1000/400">
+      </div>
+      
+      <div class="sidebar-section">
+        <div class="sidebar-title">Section Title</div>
+        <div class="site-button">
+          <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+        <textarea><a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a></textarea>
         </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <img class="full-width-image" src="https://picsum.photos/id/10/1000/400">
+      </div>
+      -->
+
+
+    </aside>
+
+  
+    <!-- =============================================== -->
+    <!-- RIGHT SIDEBAR -->
+    <!-- =============================================== -->
+
+    <aside class="right-sidebar">
+  
+      
+      <div class="sidebar-section">
+        <div class="sidebar-title">TODO</div>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+             <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
+        -->
+      </div>
+      
+      <!-- 
+      <div class="sidebar-section">
+        <div class="sidebar-title">Section Title</div>
+        <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
+        </blockquote>
+      </div>
+      
+      <div class="sidebar-section">
+        <div class="sidebar-title">Section Title</div>
+        <ul>
+          <li>List</li>
+          <li>List</li>
+          <li><a href="/">List</a></li>
+          <li>List</li>
+        </ul>
+      </div>
+      
+      <div class="sidebar-section">
+        <div class="sidebar-title">Section Title</div>
+        <marquee>
+          <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+          <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+          <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+          <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+        </marquee>
+      </div>
+      
+      <div class="sidebar-section">
+        <div class="sidebar-title">Section Title</div>
+        <img class="full-width-image" src="https://picsum.photos/id/40/1000/400">
+      </div>
+      
+      <div class="sidebar-section">
+        <div class="sidebar-title">Section Title</div>
+        <div class="site-button">
+          <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+        <textarea><a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a></textarea>
         </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <div class="site-button">
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-        	<textarea><a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a></textarea>
-          </div>
-        </div>
-      </aside> -->
+      </div>
+      -->
+    </aside>
 `;
 
 // Insert your footer HTML inside these ``. You can use HTML as usual. 

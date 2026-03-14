@@ -10,6 +10,7 @@
   --background-color: #cbeaed;
   --content-background-color: #e4f8fc;
   --sidebar-background-color: #ffffff;
+  --navbar-title: #cf7fff;
 
   /* Text Colors: */
   --text-color: #4b5c78;
@@ -18,8 +19,8 @@
   --link-color-hover: #127296;
 
   /* Text: */
-  --font: Verdana, sans-serif;
-  --heading-font: Georgia, serif;
+  --font: "WebCrafter", monospace, sans-serif;
+  --heading-font: "WebCrafter", Georgia, serif;
   --font-size: 16px;
 
   /* Other Settings: */
@@ -28,6 +29,7 @@
   --border: none;
   --round-borders: 0px;
   --sidebar-width: 160px;
+  --grid-radius: 7px;
 }
 
 /* -------------------------------------------------------- */
@@ -87,10 +89,10 @@ a:focus {
 /* -------------------------------------------------------- */
 
 .layout {
-  width: 1200px;
+  width: 1000px;
   display: grid;
   grid-gap: var(--margin);
-  grid-template: "header header" auto "main rightSidebar" auto "footer footer" auto / auto var(--sidebar-width);
+  grid-template: "header header header" auto "leftSidebar main rightSidebar" auto "footer footer footer" auto / var(--sidebar-width) auto var(--sidebar-width);
   /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
 }
 
@@ -113,10 +115,37 @@ header {
   border: var(--border);
   border-radius: var(--round-borders);
   background: var(--content-background-color);
+  top:0px;
+  left:0px;
+  margin:5px;
+  margin-left:5px;
+  height:220px;
+  padding:0px;
+  border-width: 4px; 
+  border-radius: var(--grid-radius); 
+  border-style: solid; 
+  background-image: url(./images/ccsheader.jpg);
+  background-color:#482687;
+  background-position: contain; 
 }
 
 .header-content {
   padding: var(--padding);
+}
+
+.header-content > p {
+  filter: drop-shadow(1px 1px 0 lightblue) 
+          drop-shadow(-1px 1px 0 lightblue) 
+          drop-shadow(0 2px 0 hotpink) 
+          drop-shadow(0 -1px 0 magenta) 
+          drop-shadow(0 1px 1.5px #9e42ff) 
+          drop-shadow(0 -1px 1.5px #9e42ff) 
+          drop-shadow(1px -1px 1.5px pink) 
+          drop-shadow(-1px -1px 1.5px lightblue); 
+  color:#ffffff;
+  font-size:90px;
+  top:37px;
+  left:10px;
 }
 
 .header-title {
@@ -146,10 +175,61 @@ aside {
 
 .left-sidebar {
   grid-area: leftSidebar;
+  border-radius: var(--grid-radius);
+}
+
+.left-sidebar > nav {
+  font-weight: bold;
+}
+
+.left-sidebar > nav {
+  /* border-style: dotted; */
+  font-weight: bold;
+  font-family: "WebCrafter",monospace,sans-serif;
+}
+
+.aside-nav {
+  border: 1px dashed;
+  border-radius: 10px;
+  padding: 1px;
+}
+
+.aside-nav__heading {
+  background: var(--navbar-title);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.aside-nav li {
+  text-transform: lowercase;
+}
+
+.aside-nav li.end-section {
+  border-bottom: 1px dashed;
+}
+
+.aside-nav li a {
+  text-decoration: none;
+}
+
+.aside-nav li a.active {
+  background-color: var(--background-color);
+  margin-left: 5px;
+  margin-right: 5px;
+  display: block;
+}
+
+.aside-nav details li {
+  font-size: 0.8em;
+  font-weight: normal;
 }
 
 .right-sidebar {
   grid-area: rightSidebar;
+  border-radius: var(--grid-radius);
 }
 
 .sidebar-title {
@@ -209,7 +289,7 @@ aside {
 footer {
   grid-area: footer;
   border: var(--border);
-  border-radius: var(--round-borders);
+  border-radius: var(--grid-radius);
   overflow: hidden;
   font-size: 0.75em;
   padding: 15px;
@@ -337,6 +417,7 @@ header nav ul ul li a {
 
 main {
   line-height: 1.5;
+  border-radius: var(--grid-radius);
 }
 
 main a,
@@ -602,4 +683,19 @@ hr:before {
   /* font-size:1.5em; */
   color: hsl(0, 0%, 70%);
   text-align:center;
+}
+
+h1.not-found {
+  font-size:90px;
+  text-align:center;
+  margin-top: -90px;
+  filter: drop-shadow(1px 1px 0 lightblue) 
+          drop-shadow(-1px 1px 0 lightblue) 
+          drop-shadow(0 2px 0 hotpink) 
+          drop-shadow(0 -1px 0 magenta) 
+          drop-shadow(0 1px 1.5px #9e42ff) 
+          drop-shadow(0 -1px 1.5px #9e42ff) 
+          drop-shadow(1px -1px 1.5px pink) 
+          drop-shadow(-1px -1px 1.5px lightblue); 
+  color:#ffffff;
 }

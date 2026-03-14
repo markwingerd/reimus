@@ -1,0 +1,13 @@
+Font Resources:
+https://www.webfontfree.com/en/tags/14134
+
+IMAGES
+
+filename
+artist
+location
+
+
+cssheader
+unknown
+https://art.alphacoders.com/arts/view/117574
