@@ -146,6 +146,7 @@ header {
   font-size:90px;
   top:37px;
   left:10px;
+  text-align: right;
 }
 
 .header-title {
@@ -698,4 +699,14 @@ h1.not-found {
           drop-shadow(1px -1px 1.5px pink) 
           drop-shadow(-1px -1px 1.5px lightblue); 
   color:#ffffff;
+}
+
+table {
+  font-size: 0.8em;
+}
+
+.updates > p {
+  font-size: 0.7em;
+  margin-left: 15px;
+  text-indent: -15px;
 }

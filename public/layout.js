@@ -87,9 +87,9 @@ const headerEl = `
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="anime.html">Anime</a></li>
-            <li><a href="/games.html">Video Games</a></li>
-            <li><a href="/projects.html">Programming Projects</a></li>
-            <li><a href="/music.html">Music</a></li>
+            <li><a href="games.html">Video Games</a></li>
+            <li><a href="projects.html">Programming Projects</a></li>
+            <li><a href="music.html">Music</a></li>
             <li>
                 <strong>Anime</strong>
                 <ul>
@@ -111,25 +111,23 @@ const headerEl = `
         <div class="aside-nav__heading" aria-hidden="true">Menu</div>
           <ul aria-label="Menu">
             <li>
-              <a href="./index.html">
-                <img width="9" src="assets/img/layout/heart.png" alt="" aria-hidden="true">home
-              </a>
+              <a href="index.html">home</a>
             </li>
             <li>
               <details data-id="Anime">
                 <summary>Anime Shrine</summary>
                 <ul>
                   <li class="end-section">
-                    <a href="/myanimelist.html">My Anime List</a>
+                    <a href="myanimelist.html">My Anime List</a>
                   </li>
                   <li>
-                    <a href="/sailormoon.html">Sailor Moon</a>
+                    <a href="sailormoon.html">Sailor Moon</a>
                   </li>
                   <li>
-                    <a href="/cardcaptorsakura.html">Serial Experiments: Lain</a>
+                    <a href="cardcaptorsakura.html">Serial Experiments: Lain</a>
                   </li>
                   <li>
-                    <a href="/ouran.html">Ouran highschool host club</a>
+                    <a href="ouran.html">Ouran highschool host club</a>
                   </li>
                 </ul>
               </details>
@@ -139,13 +137,13 @@ const headerEl = `
                 <summary>Video Games</summary>
                 <ul>
                   <li class="end-section">
-                    <a href="/gameachievements.html">My achievements</a>
+                    <a href="gameachievements.html">My achievements</a>
                   </li>
                   <li>
-                    <a href="/hunt.html">Hunt: Showdown</a>
+                    <a href="hunt.html">Hunt: Showdown</a>
                   </li>
                   <li>
-                    <a href="/vrising.html">V Rising</a>
+                    <a href="vrising.html">V Rising</a>
                   </li>
                 </ul>
               </details>
@@ -155,7 +153,20 @@ const headerEl = `
                 <summary>Music</summary>
                 <ul>
                   <li>
-                    <a href="/mytopmusic.html">My favorite music</a>
+                    <a href="mytopmusic.html">My favorite music</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details data-id="Website">
+                <summary>Website</summary>
+                <ul>
+                  <li>
+                    <a href="credits.html">Source List</a>
+                  </li>
+                  <li>
+                    <a href="coolsites.html">Cool sites</a>
                   </li>
                 </ul>
               </details>
@@ -224,11 +235,10 @@ const headerEl = `
     <aside class="right-sidebar">
   
       
-      <div class="sidebar-section">
-        <div class="sidebar-title">TODO</div>
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-             <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
-        -->
+      <div class="sidebar-section updates">
+        <div class="sidebar-title">Updates</div>
+        <p>3-13-26: Finished revamping the CSS</p>
+        <p>3-15-26: Added page for cool websites</p>
       </div>
       
       <!-- 
