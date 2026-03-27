@@ -672,10 +672,10 @@ main h6 {
 
 hr {
   position:relative;
-  padding:3rem 0;
+  /* padding:3rem 0; */
   border:none;
 }
-hr:before {
+/* hr:before {
   content:'\2044\2217\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2217\2044';
   position:absolute;
   top:1.2rem;
@@ -684,7 +684,7 @@ hr:before {
   /* font-size:1.5em; */
   color: hsl(0, 0%, 70%);
   text-align:center;
-}
+} */
 
 h1.not-found {
   font-size:90px;
@@ -709,4 +709,19 @@ table {
   font-size: 0.7em;
   margin-left: 15px;
   text-indent: -15px;
+}
+
+.bluesky-container {
+  display: flex;
+  align-items: center; /* Vertically centers text and image */
+  justify-content: space-between; /* Pushes text left and image right */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.bluesky-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
 }
