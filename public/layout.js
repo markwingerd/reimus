@@ -242,9 +242,6 @@ const headerEl = `
         <p>3-23-26: Added daily cards</p>
         <p>3-29-26: Counter</p>
       </div>
-
-      
-      <script type="text/javascript" src="https://counter.websiteout.com/js/5/6/0/0"></script>
       
       <!-- 
       <div class="sidebar-section">
