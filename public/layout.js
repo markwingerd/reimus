@@ -124,6 +124,9 @@ const headerEl = `
                     <a href="sailormoon.html">Sailor Moon</a>
                   </li>
                   <li>
+                    <a href="cardcaptorsakura.html">Card Captor Sakura</a>
+                  </li>
+                  <li>
                     <a href="cardcaptorsakura.html">Serial Experiments: Lain</a>
                   </li>
                   <li>
@@ -237,10 +240,12 @@ const headerEl = `
       
       <div class="sidebar-section updates">
         <div class="sidebar-title">Updates</div>
-        <p>3-13-26: Finished revamping the CSS</p>
-        <p>3-15-26: Added page for cool websites</p>
+        // <p>3-13-26: Finished revamping the CSS</p>
+        // <p>3-15-26: Added page for cool websites</p>
         <p>3-23-26: Added daily cards</p>
         <p>3-29-26: Counter</p>
+        <p>4-02-26: Sailor Moon page</p>
+
       </div>
       
       <!-- 
