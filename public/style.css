@@ -733,3 +733,7 @@ table {
   /* height: auto; */
   /* margin: -15px; */
 }
+
+.artwork p {
+  margin-bottom: 45px;
+}
