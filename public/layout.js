@@ -248,6 +248,7 @@ const headerEl = `
         <p>3-29-26: Counter</p>
         <p>4-02-26: Sailor Moon page</p>
         <p>4-08-26: Card Captor Sakura Page</p>
+        <p>4-15-26: Serial Experiments Lain Page</p>
 
       </div>
       
